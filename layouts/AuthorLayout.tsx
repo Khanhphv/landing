@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 import type { Authors } from 'contentlayer/generated'
 import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
+import siteMetadata from '@/data/siteMetadata'
 
 interface Props {
   children: ReactNode
@@ -9,7 +10,7 @@ interface Props {
 }
 
 export default function AuthorLayout({ children, content }: Props) {
-  const { name, avatar, occupation, company, email, twitter, linkedin, github } = content
+  const { name, avatar, discord, telegram } = content
 
   return (
     <>
@@ -19,30 +20,26 @@ export default function AuthorLayout({ children, content }: Props) {
             About
           </h1>
         </div>
-        <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-          <div className="flex flex-col items-center space-x-2 pt-8">
-            {avatar && (
-              <Image
-                src={avatar}
-                alt="avatar"
-                width={192}
-                height={192}
-                className="h-48 w-48 rounded-full"
-              />
-            )}
-            <h3 className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
-            <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
-            <div className="text-gray-500 dark:text-gray-400">{company}</div>
-            <div className="flex space-x-3 pt-6">
-              <SocialIcon kind="mail" href={`mailto:${email}`} />
-              <SocialIcon kind="github" href={github} />
-              <SocialIcon kind="linkedin" href={linkedin} />
-              <SocialIcon kind="x" href={twitter} />
+        <div className="items-start  pb-8">
+          <div className="flex flex-col space-x-2 pt-8">
+            {/* <Image
+              src={'/logo.svg'}
+              alt="avatar"
+              width={192}
+              height={192}
+              className="h-48 w-48 rounded-full"
+            /> */}
+            <h3 className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">
+              {siteMetadata.title}
+            </h3>
+            <p>{siteMetadata.description}</p>
+
+            <div className="flex space-x-3 py-2">
+              <SocialIcon kind="discord" href={discord} />
+              <SocialIcon kind="telegram" href={telegram} />
             </div>
           </div>
-          <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
-            {children}
-          </div>
+          Copyright © 2004-2024 by {siteMetadata.title} Innovations. All rights reserved.
         </div>
       </div>
     </>

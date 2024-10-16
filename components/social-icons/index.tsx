@@ -1,3 +1,4 @@
+import { Telex } from 'next/font/google'
 import {
   Mail,
   Github,
@@ -9,6 +10,8 @@ import {
   Mastodon,
   Threads,
   Instagram,
+  Telegram,
+  Discord,
 } from './icons'
 
 const components = {
@@ -22,6 +25,8 @@ const components = {
   mastodon: Mastodon,
   threads: Threads,
   instagram: Instagram,
+  telegram: Telegram,
+  discord: Discord,
 }
 
 type SocialIconProps = {
