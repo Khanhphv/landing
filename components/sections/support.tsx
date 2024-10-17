@@ -30,7 +30,7 @@ export default function Support() {
             disrupting the player experience.
           </p>
         </div>
-        <div className="container py-12">
+        {/* <div className="container py-12">
           <div className="-m-4 flex flex-wrap justify-center">
             {projectsData.map((d) => (
               <Card
@@ -42,7 +42,7 @@ export default function Support() {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )
