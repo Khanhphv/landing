@@ -19,7 +19,7 @@ const space_grotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteMetadata.siteUrl),
+  // metadataBase: new URL(siteMetadata.siteUrl),
   title: {
     default: siteMetadata.title,
     template: `%s | ${siteMetadata.title}`,
@@ -34,12 +34,12 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
   },
-  alternates: {
-    canonical: './',
-    types: {
-      'application/rss+xml': `${siteMetadata.siteUrl}/feed.xml`,
-    },
-  },
+  // alternates: {
+  //   canonical: './',
+  //   types: {
+  //     'application/rss+xml': `${siteMetadata.siteUrl}/feed.xml`,
+  //   },
+  // },
   robots: {
     index: true,
     follow: true,
@@ -72,18 +72,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         sizes="76x76"
         href={`${basePath}/static/favicons/apple-touch-icon.png`}
       />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href={`${basePath}/static/favicons/favicon-32x32.png`}
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href={`${basePath}/static/favicons/favicon-16x16.png`}
-      />
+      <link rel="icon" type="image/png" sizes="32x32" href={`${basePath}/logo.svg`} />
+      <link rel="icon" type="image/png" sizes="16x16" href={`${basePath}/logo.svg`} />
       <link rel="manifest" href={`${basePath}/static/favicons/site.webmanifest`} />
       <link
         rel="mask-icon"
