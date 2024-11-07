@@ -1,8 +1,7 @@
 import Image from './Image'
-import Link from './Link'
 
-const StoreCard = ({ title = '', description = '', imgSrc, href }) => (
-  <div className="md max-w-[544px]  p-4 md:w-1/3">
+const StoreCard = ({ title = '', description = '', imgSrc }) => (
+  <div className="md max-w-[544px]  p-4 md:w-1/3 lg:w-1/5">
     <div className={`${imgSrc}  flex flex-col overflow-hidden rounded-md  border-2`}>
       <>
         <Image
