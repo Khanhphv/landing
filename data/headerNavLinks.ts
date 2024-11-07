@@ -1,8 +1,8 @@
 const headerNavLinks = [
-  { href: '/', title: 'Home' },
-  { href: '#features', title: 'Features' },
-  { href: '#support', title: 'Support' },
-  { href: '#about', title: 'About' },
+  { href: '/applications', title: 'Applications' },
+  { href: '/store/valorant', title: 'Valorant' },
+  // { href: '#support', title: 'Support' },
+  // { href: '#get_started', title: 'Get Started' },
 ]
 
 export default headerNavLinks

@@ -1,12 +1,12 @@
 const siteMetadata = {
-  title: 'UDC.AC',
-  author: 'udcers',
-  headerTitle: 'UDC',
+  title: 'SkyDev',
+  author: 'SkyDevers',
+  headerTitle: 'SkyDev',
   description: 'Play Fair, Play Strong – No Room for Cheaters!',
   language: 'en-us',
   theme: 'dark', // system, dark or light
-  siteUrl: '',
-  siteRepo: '',
+  siteUrl: 'https://www.skydevs.wtf',
+  siteRepo: 'https://www.skydevs.wtf',
   siteLogo: `${process.env.BASE_PATH || ''}/logo.png`,
   socialBanner: ``,
   mastodon: '',
@@ -48,7 +48,7 @@ const siteMetadata = {
     //   googleAnalyticsId: '', // e.g. G-XXXXXXX
     // },
   },
-  brand: 'UDC',
+  brand: 'SkyDev',
 
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus, beehive

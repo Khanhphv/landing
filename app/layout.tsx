@@ -15,7 +15,7 @@ const space_grotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  // metadataBase: new URL(siteMetadata.siteUrl),
+  metadataBase: new URL(siteMetadata.siteUrl),
   title: {
     default: siteMetadata.title,
     template: `%s | ${siteMetadata.title}`,
@@ -86,7 +86,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <SectionContainer>
             <Header />
             <main className="mb-auto">{children}</main>
-            {/* <Footer /> */}
           </SectionContainer>
         </ThemeProviders>
       </body>
