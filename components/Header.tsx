@@ -4,8 +4,6 @@ import Logo from '@/data/logo.svg'
 import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
-import SearchButton from './SearchButton'
-import LoginButton from './login-button/LoginButton'
 
 const Header = () => {
   let headerClass = 'flex items-center w-full  justify-between py-10'
