@@ -3,6 +3,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { Metadata } from 'next'
 const getApplication = async () => {
   const data = await fetch(`${siteMetadata.siteUrl}/api/application`, {
+    cache: 'no-cache',
     headers: {
       'Content-Type': 'application/json',
     },
@@ -22,7 +23,7 @@ export default async function Applications() {
   const { data: applicaitons } = await getApplication()
   return (
     <div className="container py-12">
-      <div className="-m-4 flex flex-wrap">
+      <div className="-m-4 flex flex-wrap justify-center">
         {applicaitons?.map((app, index: number) => {
           return <Card key={index} {...app}></Card>
         })}
