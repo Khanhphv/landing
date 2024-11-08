@@ -7,10 +7,10 @@ import { Fragment, useEffect, useState } from 'react'
 const Card = ({ title = '', description = '', imgSrc, href }) => {
   const [isShowing, setIsShowing] = useState(false)
   useEffect(() => {
-    setTimeout(() => setIsShowing(true), 1000)
+    setTimeout(() => setIsShowing(true), 500)
   }, [])
   return (
-    <div className="md max-w-[300px] transform  p-4 ">
+    <div className="md max-w-[300px] transform ">
       <Transition
         as={Fragment}
         show={isShowing}
@@ -22,7 +22,7 @@ const Card = ({ title = '', description = '', imgSrc, href }) => {
         leaveTo="opacity-0 scale-95 "
       >
         <div
-          className={`${imgSrc}   overflow-hidden rounded-md hover:scale-105 hover:bg-slate-900`}
+          className={`${imgSrc}   overflow-hidden rounded-md p-4 hover:scale-105 hover:bg-slate-900`}
         >
           {imgSrc &&
             (href ? (

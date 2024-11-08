@@ -1,6 +1,6 @@
 const headerNavLinks = [
   { href: '/applications', title: 'Applications' },
-  { href: '/store/', title: 'Store' },
+  { href: '/store/valorant', title: 'Store' },
 ]
 
 export default headerNavLinks
