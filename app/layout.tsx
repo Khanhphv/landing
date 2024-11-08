@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteMetadata.title}`,
   },
   description: siteMetadata.description,
+  keywords: siteMetadata.keyword,
   openGraph: {
     title: siteMetadata.title,
     description: siteMetadata.description,
@@ -30,12 +31,6 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
   },
-  // alternates: {
-  //   canonical: './',
-  //   types: {
-  //     'application/rss+xml': `${siteMetadata.siteUrl}/feed.xml`,
-  //   },
-  // },
   robots: {
     index: true,
     follow: true,
@@ -51,6 +46,7 @@ export const metadata: Metadata = {
     title: siteMetadata.title,
     card: 'summary_large_image',
     images: [siteMetadata.socialBanner],
+    description: siteMetadata.description,
   },
 }
 

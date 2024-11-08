@@ -4,7 +4,10 @@ const siteMetadata = {
   title: 'SkyDev',
   author: 'SkyDevers',
   headerTitle: 'SkyDev',
-  description: 'Play Fair, Play Strong – No Room for Cheaters!',
+  description:
+    ' is your top source for Valorant Skin Changer & Counter-Strike 2 SkinChanger in 2024. Discover the best gaming mods today.',
+  keyword:
+    'valorant skin changer,valorant skin changer 2024,skin changer valorant 2024,skin changer valorant,free valorant skins,how to get valorant skin changer,skin changer for valorant,valorant skin changer free,free valorant skin changer,valorant skin changer legit,free valorant swapper,valorant skin swapper,valorant skinchanger,how to download skin changer for valorant,valorant skin hack,valorant skin changer free download,valorant skin changer download,skin swapper',
   language: 'en-us',
   theme: 'dark', // system, dark or light
   siteRepo: 'https://www.skydevs.wtf',
