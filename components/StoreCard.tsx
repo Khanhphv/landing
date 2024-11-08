@@ -1,4 +1,5 @@
-import Image from './Image'
+import Image from 'next/image'
+
 const StoreCard = ({ title = '', imgSrc, download }) => (
   <div className="transform  p-4 ">
     <div
@@ -15,7 +16,13 @@ const StoreCard = ({ title = '', imgSrc, download }) => (
         <div className="flex justify-between p-2">
           <p>{title}</p>
           <div className="flex">
-            <Image alt={title} src={'/download.webp'} width={16} height={16}></Image>
+            <Image
+              loading="eager"
+              alt={title}
+              src={'/download.webp'}
+              width={16}
+              height={16}
+            ></Image>
             {download}
           </div>
         </div>
