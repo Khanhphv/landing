@@ -4,7 +4,7 @@ import StoreCard from '@/components/StoreCard'
 export default function Page() {
   return (
     <>
-      <div className="flex flex-wrap  justify-center  sm:justify-start">
+      <div className="container flex flex-wrap items-center  justify-start sm:justify-center">
         {[
           {
             id: 1,

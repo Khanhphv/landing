@@ -84,7 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProviders>
           <SectionContainer>
             <Header />
-            <main className="mb-auto">{children}</main>
+            <main className="mb-auto flex grow">{children}</main>
           </SectionContainer>
         </ThemeProviders>
         <Footer />
