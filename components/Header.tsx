@@ -19,7 +19,7 @@ const Header = () => {
             <img src={'./logo.svg'} width={70} alt="logo" />
           </div>
           {typeof siteMetadata.headerTitle === 'string' ? (
-            <div className="hidden h-6 text-2xl font-semibold sm:block">{siteMetadata.title}</div>
+            <div className="h-6 text-2xl font-semibold sm:block">{siteMetadata.title}</div>
           ) : (
             siteMetadata.title
           )}
