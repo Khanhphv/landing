@@ -9,7 +9,7 @@ const siteMetadata = {
   theme: 'dark', // system, dark or light
   siteRepo: 'https://www.skydevs.wtf',
   siteLogo: `${process.env.BASE_PATH || ''}/logo.png`,
-  socialBanner: `/banner.png`,
+  socialBanner: `${process.env.BASE_PATH || ''}/banner.png`,
   mastodon: '',
   email: 'address@yoursite.com',
   github: 'https://github.com',
