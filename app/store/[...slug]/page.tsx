@@ -1,10 +1,9 @@
-import Image from 'next/image'
-import './style.css'
 import StoreCard from '@/components/StoreCard'
-export default function Page() {
+export default function Page({ params: { slug } }: { params: { slug: string } }) {
   return (
-    <>
-      <div className="container flex flex-wrap items-center  justify-start sm:justify-center">
+    <div className="flex grow flex-col justify-center">
+      <h2 className="text-center text-2xl font-bold uppercase">{slug}</h2>
+      <div className="flex flex-wrap items-center justify-center">
         {[
           {
             id: 1,
@@ -34,6 +33,6 @@ export default function Page() {
           return <StoreCard key={index} {...e}></StoreCard>
         })}
       </div>
-    </>
+    </div>
   )
 }

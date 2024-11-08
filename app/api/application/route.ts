@@ -8,13 +8,6 @@ const dummy = [
     href: '/store/valorant',
     imgSrc: '/games/x.png',
   },
-  {
-    id: 1,
-    title: 'Valorant',
-    description: 'Application 1 description',
-    href: '/store/valorant',
-    imgSrc: '/games/x.png',
-  },
 ]
 export async function GET() {
   console.log(siteAPI)

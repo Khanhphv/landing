@@ -1,8 +1,10 @@
 import Image from './Image'
 
 const StoreCard = ({ title = '', description = '', imgSrc }) => (
-  <div className="md max-w-[300px]  p-4 ">
-    <div className={`${imgSrc}  flex flex-col overflow-hidden rounded-md  border-2`}>
+  <div className="transform  p-4 ">
+    <div
+      className={`${imgSrc}  flex flex-col overflow-hidden rounded-md  border-2 hover:scale-105 hover:bg-slate-900`}
+    >
       <>
         <Image
           alt={title}

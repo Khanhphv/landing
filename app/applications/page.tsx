@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default async function Applications() {
   const { data: applicaitons } = await getApplication()
   return (
-    <div className="container -m-4 flex flex-wrap items-center justify-center">
+    <div className="-m-4 flex grow flex-wrap items-center justify-center">
       {applicaitons?.map((app, index: number) => {
         return <Card key={index} {...app}></Card>
       })}
