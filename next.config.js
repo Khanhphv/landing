@@ -70,7 +70,12 @@ module.exports = () => {
       dirs: ['app', 'components', 'layouts', 'scripts'],
     },
     images: {
-      remotePatterns: [],
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'landing-roan-rho.vercel.app',
+        },
+      ],
       unoptimized,
     },
     async headers() {

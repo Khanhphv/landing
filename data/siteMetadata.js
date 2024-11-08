@@ -1,11 +1,12 @@
 const siteMetadata = {
+  siteUrl: `${process.env.NODE_ENV !== 'development' ? process.env.BASE_URL : 'http://localhost:3000'}`,
+  siteAPI: `${process.env.BASE_API}`,
   title: 'SkyDev',
   author: 'SkyDevers',
   headerTitle: 'SkyDev',
   description: 'Play Fair, Play Strong – No Room for Cheaters!',
   language: 'en-us',
   theme: 'dark', // system, dark or light
-  siteUrl: 'https://www.skydevs.wtf',
   siteRepo: 'https://www.skydevs.wtf',
   siteLogo: `${process.env.BASE_PATH || ''}/logo.png`,
   socialBanner: ``,
