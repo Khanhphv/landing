@@ -23,8 +23,8 @@ const siteMetadata = {
   linkedin: 'https://www.linkedin.com',
   threads: 'https://www.threads.net',
   instagram: 'https://www.instagram.com',
-  telegram: 'https://www.instagram.com',
-  discord: 'https://www.instagram.com',
+  telegram: 'https://www.google.com',
+  discord: 'https://www.google.com',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
