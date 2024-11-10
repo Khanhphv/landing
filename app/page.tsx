@@ -1,6 +1,5 @@
-import { redirect } from 'next/navigation'
-import Main from './Main'
+import { HomePage } from '@/components/views/home-page'
 
 export default async function Page() {
-  return redirect('/applications')
+  return <HomePage />
 }
