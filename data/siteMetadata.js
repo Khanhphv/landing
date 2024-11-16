@@ -24,7 +24,7 @@ const siteMetadata = {
   threads: 'https://www.threads.net',
   instagram: 'https://www.instagram.com',
   telegram: 'https://www.google.com',
-  discord: 'https://www.google.com',
+  discord: 'https://discord.gg/BM6t3r76Xn',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
