@@ -10,7 +10,7 @@ export function ThemeProviders({ children }: { children: React.ReactNode }) {
 
   // When mounted on client, now we can show the UI
   useEffect(() => {
-    setTheme('dark')
+    setTheme('light')
     setMounted(true)
   }, [])
 
