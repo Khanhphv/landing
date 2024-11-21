@@ -39,7 +39,7 @@ export default async function Page() {
             <h2 className="mb-10 text-3xl font-bold">Key Features</h2>
             <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
               {/* Feature 1 */}
-              <div className="flex flex-col items-center rounded-lg bg-white p-6 shadow-lg">
+              <div className="flex flex-col items-center rounded-lg bg-white p-6 shadow-lg hover:scale-105">
                 <div className="mb-4 rounded-full  p-4 text-white">
                   {/* Replace with an activity tracking icon */}
                   <span className="text-4xl font-bold">📊</span>
@@ -52,7 +52,7 @@ export default async function Page() {
               </div>
 
               {/* Feature 2 */}
-              <div className="flex flex-col items-center rounded-lg bg-white p-6 shadow-lg">
+              <div className="flex flex-col items-center rounded-lg bg-white p-6 shadow-lg hover:scale-105">
                 <div className="mb-4 rounded-full  p-4 text-white">
                   {/* Replace with a clock or time icon */}
                   <span className="text-4xl font-bold">⏰</span>
@@ -65,7 +65,7 @@ export default async function Page() {
               </div>
 
               {/* Feature 3 */}
-              <div className="flex flex-col items-center rounded-lg bg-white p-6 shadow-lg">
+              <div className="flex flex-col items-center rounded-lg bg-white p-6 shadow-lg hover:scale-105">
                 <div className="mb-4 rounded-full  p-4 text-white">
                   {/* Replace with a map or location icon */}
                   <span className="text-4xl font-bold">📍</span>
@@ -78,7 +78,7 @@ export default async function Page() {
               </div>
 
               {/* Feature 4 */}
-              <div className="flex flex-col items-center rounded-lg bg-white p-6 shadow-lg">
+              <div className="flex flex-col items-center rounded-lg bg-white p-6 shadow-lg hover:scale-105">
                 <div className="mb-4 rounded-full  p-4 text-white">
                   {/* Replace with a shield or filter icon */}
                   <span className="text-4xl font-bold">🛡️</span>
