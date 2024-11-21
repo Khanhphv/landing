@@ -1,10 +1,10 @@
 const siteMetadata = {
   siteUrl: `${process.env.NODE_ENV !== 'development' ? process.env.BASE_URL : 'http://localhost:3000'}`,
   siteAPI: `${process.env.BASE_API}`,
-  title: '',
+  title: 'Page title',
   author: '',
-  headerTitle: '',
-  description: '',
+  headerTitle: 'Take Control of Your Child’s Digital Journey Safely',
+  description: 'Take Control of Your Child’s Digital Journey Safely',
   keyword: '',
   language: 'en-us',
   theme: 'light', // system, dark or light

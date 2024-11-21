@@ -1,9 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
 import Link from './Link'
 import MobileNav from './MobileNav'
-import ThemeSwitch from './ThemeSwitch'
 import Image from 'next/image'
 
 const Header = () => {
@@ -17,7 +15,7 @@ const Header = () => {
       <Link href="/" aria-label={siteMetadata.headerTitle}>
         <div className="flex items-center justify-between">
           <div className="mr-3">
-            <Image src={'/logo.svg'} width={70} height={70} alt="logo" />
+            <Image src={'/logo.png'} width={100} height={100} alt="logo" />
           </div>
           {typeof siteMetadata.headerTitle === 'string' ? (
             <div className="h-6 text-2xl font-semibold sm:block">{siteMetadata.title}</div>
@@ -26,24 +24,25 @@ const Header = () => {
           )}
         </div>
       </Link>
-      <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
-        <div className="no-scrollbar hidden max-w-40 items-center space-x-4 overflow-x-auto sm:space-x-6 lg:flex lg:max-w-full">
-          {headerNavLinks
-            .filter((link) => link.href !== '/')
-            .map((link) => (
-              <Link
-                key={link.title}
-                href={link.href}
-                className="block font-medium text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
-              >
-                {link.title}
-              </Link>
-            ))}
-        </div>
-        {/* <ThemeSwitch /> */}
-        {/* <LoginButton></LoginButton> */}
-      </div>
+
       <div>
+        <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
+          <div className="no-scrollbar hidden max-w-40 items-center space-x-4 overflow-x-auto sm:space-x-8 lg:flex lg:max-w-full">
+            {headerNavLinks
+              .filter((link) => link.href !== '/')
+              .map((link) => (
+                <Link
+                  key={link.title}
+                  href={link.href}
+                  className="block font-medium text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
+                >
+                  {link.title}
+                </Link>
+              ))}
+          </div>
+          {/* <ThemeSwitch /> */}
+          {/* <LoginButton></LoginButton> */}
+        </div>
         <MobileNav />
       </div>
     </header>

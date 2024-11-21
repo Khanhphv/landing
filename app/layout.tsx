@@ -63,8 +63,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         sizes="76x76"
         href={`${basePath}/static/favicons/apple-touch-icon.png`}
       />
-      <link rel="icon" type="image/png" sizes="32x32" href={`${basePath}/logo.svg`} />
-      <link rel="icon" type="image/png" sizes="16x16" href={`${basePath}/logo.svg`} />
+      <link rel="icon" type="image/png" sizes="32x32" href={`${basePath}/logo.png`} />
+      <link rel="icon" type="image/png" sizes="16x16" href={`${basePath}/logo.png`} />
       <link rel="manifest" href={`${basePath}/static/favicons/site.webmanifest`} />
       <link
         rel="mask-icon"
@@ -75,11 +75,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="alternate" type="application/rss+xml" href={`${basePath}/feed.xml`} />
-      <body className="flex min-h-screen flex-col bg-white pl-[calc(100vw-100%)] text-black antialiased dark:bg-gray-950 dark:text-white">
+      <body className="flex min-h-screen flex-col bg-white  text-black antialiased dark:bg-gray-950 dark:text-white">
         <ThemeProviders>
           <SectionContainer>
             <Header />
-            <main className="mb-auto flex grow flex-col">{children}</main>
+            <main className="mx-auto mb-auto flex grow flex-col">{children}</main>
           </SectionContainer>
         </ThemeProviders>
         <Footer />

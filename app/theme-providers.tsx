@@ -10,12 +10,11 @@ export function ThemeProviders({ children }: { children: React.ReactNode }) {
 
   // When mounted on client, now we can show the UI
   useEffect(() => {
-    setTheme('light')
     setMounted(true)
   }, [])
 
   return (
-    <ThemeProvider attribute="class" defaultTheme={'dark'} enableSystem>
+    <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme} enableSystem>
       {children}
     </ThemeProvider>
   )
