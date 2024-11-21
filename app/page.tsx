@@ -7,7 +7,7 @@ export default async function Page() {
         {/* Hero Section */}
         <section className="relative flex flex-col items-center bg-gray-100 px-5 py-40 text-center lg:flex-row">
           <div className="container mx-auto pb-10">
-            <h1 className="mb-4 text-4xl font-bold">
+            <h1 className="mb-4 text-4xl font-bold text-blue-800">
               Take Control of Your Child’s Digital Journey Safely
             </h1>
             <p className="mb-6 text-lg">

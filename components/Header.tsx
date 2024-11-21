@@ -5,7 +5,7 @@ import MobileNav from './MobileNav'
 import Image from 'next/image'
 
 const Header = () => {
-  let headerClass = 'flex items-center w-full  justify-between py-10'
+  let headerClass = 'flex items-center w-full  justify-between mb-10'
   if (siteMetadata.stickyNav) {
     headerClass += ' sticky top-0 z-50'
   }
@@ -18,7 +18,7 @@ const Header = () => {
             <Image src={'/logo.png'} width={100} height={100} alt="logo" />
           </div>
           {typeof siteMetadata.headerTitle === 'string' ? (
-            <div className="h-6 text-2xl font-semibold sm:block">{siteMetadata.title}</div>
+            <div className="h-6 text-3xl font-semibold sm:block">{siteMetadata.title}</div>
           ) : (
             siteMetadata.title
           )}
@@ -34,7 +34,7 @@ const Header = () => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="block font-medium text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
+                  className="block text-xl font-medium text-gray-900 hover:text-primary-500 hover:underline dark:text-gray-100 dark:hover:text-primary-400"
                 >
                   {link.title}
                 </Link>
